@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+	<definition name="beforeloginTemplate" template="/WEB-INF/pages/template/beforeLoginLayout.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="body" value="" /> 
+    </definition>
+    
+    <definition name="defaultHomePage" extends="beforeloginTemplate">
+		<put-attribute name="title" value="Home Page" />
+		<put-attribute name="body" value="/WEB-INF/pages/Login/defaultHomePage.jsp" />
+	</definition> 
+	
+	 <definition name="downloadImage" extends="beforeloginTemplate">
+		<put-attribute name="title" value="Home Page" />
+		<put-attribute name="body" value="/WEB-INF/pages/Login/defaultHomePage.jsp" />
+	</definition> 
+    
+  </tiles-definitions>
